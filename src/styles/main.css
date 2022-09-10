@@ -1,0 +1,275 @@
+body {
+  background-color: var(--background-color);
+  font-size: 1.6rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.loginHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.loginTitle {
+  color: var(--basic-white);
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+.loginLogo {
+  width: 9rem;
+  height: 9rem;
+}
+
+.mainContent {
+  width: 100%;
+  height: 10rem;
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.mainDescription {
+  max-width: 28rem;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
+}
+
+.loginFooter {
+  width: 100%;
+  height: 35rem;
+  text-align: center;
+  padding-block: 5rem;
+}
+
+.loginBackground {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--principal-orange);
+  height: 25rem;
+}
+
+.loginTextFooter {
+  font-size: 1.8rem;
+  color: var(--basic-white);
+}
+
+button {
+  padding-block: 1.3rem;
+  padding-inline: 1.8rem;
+  border-radius: 12px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  border: none;
+  color: var(--basic-white);
+  background-color: var(--button-blue);
+  cursor: pointer;
+}
+
+.loginEmail,
+.loginRegisterQuestion,
+.loginRegister {
+  margin-top: 3rem;
+  font-weight: 600;
+}
+
+.loginRegisterQuestion {
+  font-size: 1.8rem;
+  color: var(--basic-black);
+}
+
+/* MODAL */
+
+.modalBackground {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modalLoginContent {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 80%;
+  height: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: var(--background-color);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.modalLoginForm {
+  color: var(--basic-white);
+  height: 50%;
+  margin-top: 2rem;
+  margin-bottom: 9rem;
+}
+
+.modalLoginEmail,
+.modalLoginPassword {
+  width: 100%;
+  padding-block: 0.8rem;
+  padding-inline: 2rem;
+  margin-block: 1rem;
+  border: none;
+  border-radius: 12px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.modalCloseBtn {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 99%;
+}
+
+.modalButton {
+  margin-top: 1rem;
+  margin-left: 75%;
+}
+
+.hidden {
+  display: none;
+}
+
+.modalRegisterContent {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 80%;
+  height: 48%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: var(--background-color);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.modalRegisterName,
+.modalRegisterMail,
+.modalRegisterPassword,
+.modalRegisterExperience {
+  width: 100%;
+  margin-block: 1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 12px;
+}
+
+.modalCloseBtnRegister {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 99%;
+  margin-top: 2rem;
+}
+
+.modalRegisterForm {
+  margin-top: 1rem;
+  color: var(--principal-orange);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.modalLoginEmailLabel,
+.modalLoginPasswordLabel {
+  color: var(--principal-orange);
+}
+
+.modalRegisterLabel {
+  padding-bottom: 2rem;
+}
+
+.modalRegisterButton {
+  margin-top: 1rem;
+  margin-left: 75%;
+}
+
+.businessContent {
+  display: none;
+}
+
+
+@media (min-width: 1024px) {
+  .loginBackground {
+    width: 50%;
+    height: 100vw;
+    background: var(--gradient-background)
+  }
+  
+  .mainDescription {
+    font-size: 3rem;
+  }
+
+  .principalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    margin-left: 60%;
+    margin-top: 8rem;
+  }
+
+  .loginRegisterQuestion {
+    color: var(--principal-orange)
+  }
+  
+  .businessContent {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+  }
+
+  .businessContent img {
+    position: absolute;
+    top: 13rem;
+    left: 20rem;
+    width: 70%;
+  }
+
+  .principalContent {
+    padding: 2rem;
+    background-color: var(--light-grey);
+    border-radius: 12px;
+  }
+
+  .businessDescription {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    top: 75%;
+    font-size: 2rem;
+    color:var(--basic-white);
+    font-weight: 300;
+  }
+
+  .modalLoginContent {
+    width: 50rem;
+    height: 30rem;
+  }
+
+  .modalRegisterContent {
+    width: 50rem;
+    height: 35rem;
+  }
+}

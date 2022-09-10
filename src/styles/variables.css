@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Padrão para utilizar REM */
+  font-size: 62.5%;
+  /* 
+  Varíaveis de cor
+  */
+  --background-color: #082032;
+  --light-grey: #2C394B;
+  --basic-white: #ffffff;
+  --principal-orange: #FF4C29;
+  --gradient-background: radial-gradient(circle, rgba(65,93,115,1) 5%, rgba(9,35,55,1) #082032%, rgba(27,52,71,1) 85%);
+  --button-blue: #334756;
+  --basic-black: rgba(25, 25, 25, 1);
+}
