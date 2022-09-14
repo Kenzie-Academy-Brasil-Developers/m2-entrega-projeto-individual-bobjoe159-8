@@ -8,10 +8,17 @@ export class Requests {
     const loginData = await instance
       .post('/auth/login', data)
       .then(resp => {
+        console.log(resp)
         localStorage.setItem('@myBusiness:token', resp.data.token)
-        setTimeout(() => {
-          window.location.replace('src/pages/companies.html')
-        }, 2000)
+        if (resp.data.is_admin == true) {
+          setTimeout(() => {
+            window.location.replace('src/pages/companies.html')
+          }, 2000)
+        } else {
+          setTimeout(() => {
+            window.location.replace('src/pages/dashboard.html')
+          }, 2000)
+        }
         Toast.create('Login realizado com sucesso', 'green')
       })
       .catch(err => {
@@ -222,5 +229,45 @@ export class Requests {
         console.log(err)
       })
     return outOfWork
+  }
+
+  static async conectedUser() {
+    const conectedUser = await instance
+      .get('/users/profile/')
+      .then(resp => {
+        return resp.data
+      })
+      .catch(err => {
+        Toast.create(err, 'red')
+        console.log(err)
+      })
+    return conectedUser
+  }
+
+  static async conectedCoworkersDepartments() {
+    const conectedCoworkersDepartments = await instance
+      .get('/users/departments/coworkers')
+      .then(resp => {
+        return resp.data
+      })
+      .catch(err => {
+        Toast.create(err, 'red')
+        console.log(err)
+      })
+    return conectedCoworkersDepartments
+  }
+
+  static async editUserInfos(data) {
+    const editUserinfos = await instance
+      .patch('/users/', data)
+      .then(resp => {
+        Toast.create('Usuário editado com sucesso', 'green')
+        return resp.data
+      })
+      .catch(err => {
+        Toast.create(err, 'red')
+        console.log(err)
+      })
+    return editUserinfos
   }
 }

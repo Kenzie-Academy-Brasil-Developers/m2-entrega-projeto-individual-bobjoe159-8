@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="stylesheet" href="../styles/darkmode.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="interruptor">
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+    <header class="headerMenu">
+      <img class="headerLogo" src="../assets/logo.png" alt="" />
+      <h2>Usuário</h2>
+      <img src="../assets/menu-icon.svg" alt="" class="burguerMenu" />
+      <span class="headerExit">Logout</span>
+    </header>
+    <main class="mainContent">
+      <section class="infosUser">
+        <h3>Informações do usuário:</h3>
+      </section>
+      <section class="coWorkers">
+        <h3>Trabalham no meu departamento:</h3>
+      </section>
+      <section class="editUser">
+        <h3>Editar minhas informações</h3>
+
+        <input class="userName" type="text" placeholder="Nome de usuário" />
+        <input class="userMail" type="text" placeholder="Email" />
+        <input class="userPassword" type="text" placeholder="Senha" />
+        <button class="submitEditButton">Editar</button>
+      </section>
+    </main>
+    <div class="openMenu hidden">
+      <ul>
+        <li class="burgerLogout">Logout</li>
+      </ul>
+    </div>
+    <script type="module" src="../scripts/darkmode.js"></script>
+    <script type="module" src="../scripts/requests.js"></script>
+    <script type="module" src="../scripts/axios.js"></script>
+    <script type="module" src="../scripts/toast.js"></script>
+    <script type="module" src="../scripts/dashboard.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>

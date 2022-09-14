@@ -18,7 +18,6 @@ export class Logout {
     const headerExit = document.querySelector('.burgerLogout')
 
     headerExit.addEventListener('click', event => {
-      console.log('teste')
       event.preventDefault()
       Toast.create('Você saiu da conta.', 'red')
       setTimeout(() => {

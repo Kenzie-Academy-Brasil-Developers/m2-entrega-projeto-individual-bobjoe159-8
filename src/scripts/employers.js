@@ -72,11 +72,16 @@ class Employers {
       employerInfo.innerHTML = ''
       const usernameH3 = document.createElement('h3')
       const usernameP = document.createElement('p')
-      employerInfo.append(usernameH3, usernameP)
+      const kindOfWork = document.createElement('p')
+      const professionalLevel = document.createElement('p')
+      employerInfo.append(usernameH3, usernameP, kindOfWork, professionalLevel)
       listEmployers.forEach(employer => {
+        console.log(employer)
         if (searchEmployer.value == employer.username) {
-          usernameH3.innerHTML = employer.username
-          usernameP.innerHTML = employer.email
+          usernameH3.innerHTML = `Nome: ${employer.username}`
+          usernameP.innerHTML = `Email: ${employer.email}`
+          kindOfWork.innerHTML = `Trabalho: ${employer.kind_of_work}`
+          professionalLevel.innerHTML = `Experiência: ${employer.professional_level}`
         }
       })
     })

@@ -2,128 +2,6 @@ body {
   background-color: var(--background-color);
 }
 
-.mainMenu {
-  z-index: -1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.sectorList {
-  color: var(--light-grey);
-}
-
-.listSectors,
-.companiesMenu {
-  width: 20rem;
-  height: 20rem;
-  background-color: var(--basic-white);
-  text-align: center;
-  border-radius: 12px;
-  margin-top: 1rem;
-}
-
-.resultCompanie {
-  width: 20rem;
-  height: 30rem;
-  background-color: var(--basic-white);
-  text-align: center;
-  border-radius: 12px;
-  margin-top: 1rem;
-}
-
-
-.listSectors {
-  margin-top: 10rem;
-}
-
-button {
-  display: block;
-  margin: 0 auto;
-  margin-top: 1rem;
-}
-
-.modalBackground {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.modalContent {
-  position: absolute;
-  text-align: center;
-  background-color: var(--light-grey);
-  color: var(--basic-white);
-  width: 30rem;
-  height: 35rem;
-  padding-top: 3.5rem;
-  top: 10%;
-  right: 50%;
-  transform: translate(50%, 50%);
-  border-radius: 12px;
-  padding-bottom: 5rem;
-}
-
-.modalContent input {
-  width: 90%;
-  padding: 0.5rem;
-  border-radius: 12px;
-  margin-bottom: 0.5rem;
-}
-
-.selectCompanies option {
-  width: 90%;
-  padding: 0.5rem;
-  border-radius: 12px;
-  margin-bottom: 0.5rem;
-}
-
-.modalContent h4 {
-  margin-bottom: 2rem;
-}
-
-.selectCompanies {
-  display: block;
-  margin-top: 1rem;
-  margin: 0 auto;
-}
-
-.hidden {
-  display: none;
-}
-
-.modalCloseBtn {
-  width: 2rem;
-  margin-bottom: 2rem;
-}
-
-.registerButton {
-  margin-top: 2rem;
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: var(--principal-orange);
-  border: none;
-  color: var(--basic-white);
-  cursor: pointer
-}
-
-.registerCompanie,
-.searchCompanie {
-  display: block;
-  margin: 0 auto;
-  margin-top: 1rem;
-  margin-top: 2rem;
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: var(--principal-orange);
-  border: none;
-  color: var(--basic-white);
-  cursor: pointer
-}
-
 .headerLogo {
   width: 5rem;
 }
@@ -156,6 +34,7 @@ button {
   position: absolute;
   width: 100vw;
   height: 100%;
+  top: 0;
   padding-top: 30vh;
   font-size: 3rem;
 }
@@ -170,96 +49,99 @@ button {
   display: none;
 }
 
-.companieDepartments {
-  width: 90%;
-  height: 70%;
-  margin: 0 auto;
-  overflow-x: auto;
-  overflow-y: hidden;
+.hidden {
+  display: none;
 }
 
-.companieDepartments ul {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.companieDepartments ul li {
-  padding-top: 3rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  min-width: 15rem;
-  height: 18rem;;
-  background-color: var(--button-blue);
-  color: var(--basic-white);
-  border-radius: 12px;
-}
-
-.companieDepartments ul li p {
-  margin-bottom: 2rem;
-}
-
-.departmentList h4 {
-  padding-bottom: 1rem;
-}
-
-@media (min-width: 768px) {
-  .mainMenu {
-    flex-direction: row;
-    margin-top: 15rem;
-    gap: 5rem;
-  }
-
-  .listSectors {
-    margin-top: 0rem;
-  }
-  
-  .headerExit {
-    cursor: pointer
-  }
-
-.listSectors,
-.companiesMenu,
-.resultCompanie {
-  width: 40rem;
-  height: 40rem;
+.infosUser,
+.coWorkers,
+.editUser {
+  width: 20rem;
+  height: 25rem;
   background-color: var(--basic-white);
   text-align: center;
   border-radius: 12px;
   margin-top: 1rem;
-  padding-top: 5rem;
 }
 
-.burguerMenu {
-  display: none;
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20rem;
 }
 
-.headerMenu {
-  padding-inline: 25rem;
+.infosUser h3 {
+  margin-bottom: 4rem;
+}
+
+.coWorkers h3 {
+  margin-bottom: 4rem;
+}
+
+.editUser h3 {
+  margin-bottom: 4rem;
+}
+
+h3 {
+  color: var(--principal-orange);
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: var(--principal-orange);
+  border: none;
+  color: var(--basic-white);
+  cursor: pointer
+}
+
+@media (min-width: 768px) {
+  .burguerMenu {
+    display: none;
+  }
+  
+  .headerMenu {
+    padding-inline: 25rem;
+  }
+  
+  .headerExit {
+    display: block
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .infosUser,
+  .coWorkers,
+  .editUser {
+    width: 40rem;
+    height: 40rem;
+    background-color: var(--basic-white);
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 1rem;
+    padding-top: 5rem;
 }
 
 .headerExit {
-  display: block
+  cursor: pointer
 }
 
-.menuDesktop {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  color: var(--basic-white);
-  margin-top: 12rem;
-}
-
-.menuList {
-  display: flex;
-  gap: 5rem;
-  padding: 1rem;
-}
-
-.menuList li {
-  background-color: var(--principal-orange);
-  padding: 1rem;
-  border-radius: 12px;
-  cursor: pointer;
-}
 }
