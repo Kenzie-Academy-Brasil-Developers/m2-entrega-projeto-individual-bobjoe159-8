@@ -47,4 +47,4 @@ export class Login {
   }
 }
 
-Login.renderLogin()
+//Login.renderLogin()

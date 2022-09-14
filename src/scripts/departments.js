@@ -93,7 +93,7 @@ class Departments {
     companiesButton.addEventListener('click', event => {
       event.preventDefault()
       console.log('teste')
-      window.location.replace('/index.html')
+      window.location.replace('../pages/companies.html')
     })
   }
 
@@ -102,7 +102,7 @@ class Departments {
 
     companiesButton.addEventListener('click', event => {
       event.preventDefault()
-      window.location.replace('/index.html')
+      window.location.replace('../pages/companies.html')
     })
   }
 

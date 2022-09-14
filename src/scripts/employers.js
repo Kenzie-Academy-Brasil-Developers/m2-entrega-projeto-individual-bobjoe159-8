@@ -6,7 +6,7 @@ class Employers {
     const token = localStorage.getItem('@myBusiness:token')
 
     if (!token) {
-      window.location.replace('../pages/login.html')
+      window.location.replace('../../index.html')
     }
   }
   static openBurgerMenu() {
@@ -35,7 +35,7 @@ class Employers {
       event.preventDefault()
       Toast.create('Você saiu da conta.', 'red')
       setTimeout(() => {
-        window.location.replace('../pages/login.html')
+        window.location.replace('../../index.html')
       }, 2000)
       localStorage.clear()
     })
@@ -49,7 +49,7 @@ class Employers {
       event.preventDefault()
       Toast.create('Você saiu da conta.', 'red')
       setTimeout(() => {
-        window.location.replace('../pages/login.html')
+        window.location.replace('../../index.html')
       }, 2000)
       localStorage.clear()
     })
@@ -182,11 +182,11 @@ class Employers {
     const departmentsButton = document.querySelector('.departmentsButton')
 
     companiesButton.addEventListener('click', () => {
-      window.location.replace('../../index.html')
+      window.location.replace('./companies.html')
     })
 
     departmentsButton.addEventListener('click', () => {
-      window.location.replace('../pages/departments.html')
+      window.location.replace('./departments.html')
     })
   }
 }

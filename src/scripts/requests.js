@@ -10,7 +10,7 @@ export class Requests {
       .then(resp => {
         localStorage.setItem('@myBusiness:token', resp.data.token)
         setTimeout(() => {
-          window.location.replace('/index.html')
+          window.location.replace('src/pages/companies.html')
         }, 2000)
         Toast.create('Login realizado com sucesso', 'green')
       })

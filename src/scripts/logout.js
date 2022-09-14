@@ -8,7 +8,7 @@ export class Logout {
       event.preventDefault()
       Toast.create('Você saiu da conta.', 'red')
       setTimeout(() => {
-        window.location.replace('./src/pages/login.html')
+        window.location.replace('../../index.html')
       }, 2000)
       localStorage.clear()
     })
@@ -22,7 +22,7 @@ export class Logout {
       event.preventDefault()
       Toast.create('Você saiu da conta.', 'red')
       setTimeout(() => {
-        window.location.replace('./src/pages/login.html')
+        window.location.replace('../../index.html')
       }, 2000)
       localStorage.clear()
     })
@@ -35,7 +35,7 @@ export class Logout {
       event.preventDefault()
       Toast.create('Você saiu da conta.', 'red')
       setTimeout(() => {
-        window.location.replace('../pages/login.html')
+        window.location.replace('../../index.html')
       }, 2000)
       localStorage.clear()
     })
@@ -49,7 +49,7 @@ export class Logout {
       event.preventDefault()
       Toast.create('Você saiu da conta.', 'red')
       setTimeout(() => {
-        window.location.replace('../pages/login.html')
+        window.location.replace('../../index.html')
       }, 2000)
       localStorage.clear()
     })

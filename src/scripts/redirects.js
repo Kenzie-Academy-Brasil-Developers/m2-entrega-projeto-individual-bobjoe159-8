@@ -3,7 +3,7 @@ export class Redirect {
     const departmentButton = document.querySelector('.departmentButton')
 
     departmentButton.addEventListener('click', () => {
-      window.location.replace('src/pages/departments.html')
+      window.location.replace('../pages/departments.html')
     })
   }
 
@@ -11,7 +11,7 @@ export class Redirect {
     const employersButton = document.querySelector('.employersButton')
 
     employersButton.addEventListener('click', () => {
-      window.location.replace('src/pages/employers.html')
+      window.location.replace('../pages/employers.html')
     })
   }
 
@@ -19,7 +19,7 @@ export class Redirect {
     const departmentButton = document.querySelector('.departmentButtonMobal')
 
     departmentButton.addEventListener('click', () => {
-      window.location.replace('src/pages/departments.html')
+      window.location.replace('../pages/departments.html')
     })
   }
 
@@ -27,7 +27,7 @@ export class Redirect {
     const employersButton = document.querySelector('.employersButtonMobal')
 
     employersButton.addEventListener('click', () => {
-      window.location.replace('src/pages/employers.html')
+      window.location.replace('../pages/employers.html')
     })
   }
 }
