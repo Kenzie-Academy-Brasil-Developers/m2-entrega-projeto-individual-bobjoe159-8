@@ -1,0 +1,57 @@
+body.dark {
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.8858718487394958) 0%,
+    rgb(25, 25, 25) 57%,
+    rgb(18, 18, 18) 100%
+  );
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.interruptor {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.label {
+  z-index: 100;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+
+  transform: scale(1.5);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+.fa-sun {
+  color: #f39c12;
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}

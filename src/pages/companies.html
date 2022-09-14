@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/dashboard.css" />
     <link rel="stylesheet" href="../styles/variables.css" />
     <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/darkmode.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -15,6 +16,14 @@
     <title>Dashboard</title>
   </head>
   <body>
+    <div class="interruptor">
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
     <header class="headerMenu">
       <img class="headerLogo" src="../assets/logo.png" alt="" />
       <h2>Empresas</h2>
@@ -85,6 +94,11 @@
         <button class="registerButton">Registrar</button>
       </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/998c60ef77.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="../scripts/darkmode.js"></script>
     <script type="module" src="../scripts/requests.js"></script>
     <script type="module" src="../scripts/axios.js"></script>
     <script type="module" src="../scripts/toast.js"></script>
