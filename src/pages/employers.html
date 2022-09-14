@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/employers.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <title>Funcionários</title>
+  </head>
+  <body>
+    <header class="headerMenu">
+      <img class="headerLogo" src="../assets/logo.png" alt="" />
+      <h2>Funcionários</h2>
+      <img src="../assets/menu-icon.svg" alt="" class="burguerMenu" />
+      <span class="headerExitEmployer">Logout</span>
+    </header>
+    <section class="menuDesktop">
+      <ul class="menuList">
+        <li class="companiesButton">Empresas</li>
+        <li class="departmentsButton">Departamentos</li>
+      </ul>
+    </section>
+    <main class="mainContent">
+      <section class="checkEmployers">
+        <h4>Procurar funcionário</h4>
+        <select class="searchEmployer" name="" id=""></select>
+        <button class="searchEmployerButton">Pesquisar</button>
+        <div class="employerInfo">
+          <h3>Ronaldo</h3>
+          <p>Email: ronaldo@gmail.com</p>
+        </div>
+      </section>
+      <section class="hireFireEmployers">
+        <h4>Contratar funcionário</h4>
+        <select class="hireEmployersList" name="" id=""></select>
+        <h4>Departamento:</h4>
+        <select class="hireDepartmentsList" name="" id=""></select>
+        <button class="hireEmployerButton">Contratar funcionário</button>
+        <h4 class="hireEmployerTitle">Demitir funcionário</h4>
+        <select class="fireEmployersList" name="" id=""></select>
+        <!-- <h4>Departamento:</h4>
+        <select class="fireDepartmentsList" name="" id=""></select> -->
+        <button class="fireEmployerButton">Demitir funcionário</button>
+      </section>
+
+      <section class="editEmployers">
+        <h4>Editar funcionário</h4>
+        <p>Funcionário</p>
+        <select class="editEmployerList" name="" id=""></select>
+        <p>Tipo de trabalho</p>
+        <input class="editType" type="text" name="" id="" />
+        <p>Nível profissional</p>
+        <input class="editProfessional" type="text" name="" id="" />
+        <button class="editEmployerButton">Editar</button>
+      </section>
+
+      <section class="unemployedPeople">
+        <h4>Funcionários sem empresa</h4>
+        <select class="outOfWork" name="" id=""></select>
+      </section>
+    </main>
+    <div class="openMenu hidden">
+      <ul>
+        <li class="companiesButtonMobal">Empresas</li>
+        <li class="departmentsButtonMobal">Departamentos</li>
+        <li class="burgerLogoutEmployer">Logout</li>
+      </ul>
+    </div>
+    <script type="module" src="../scripts/requests.js"></script>
+    <script type="module" src="../scripts/axios.js"></script>
+    <script type="module" src="../scripts/toast.js"></script>
+    <script type="module" src="../scripts/employers.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>

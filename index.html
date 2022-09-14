@@ -4,7 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/styles/dashboard.css" />
+    <link rel="stylesheet" href="./src/styles/variables.css" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <title>Dashboard</title>
   </head>
-  <body></body>
+  <body>
+    <header class="headerMenu">
+      <img class="headerLogo" src="./src/assets/logo.png" alt="" />
+      <h2>Empresas</h2>
+      <img src="./src/assets/menu-icon.svg" alt="" class="burguerMenu" />
+      <span class="headerExit">Logout</span>
+    </header>
+    <section class="menuDesktop">
+      <ul class="menuList">
+        <li class="departmentButton">Departamentos</li>
+        <li class="employersButton">Funcionários</li>
+      </ul>
+    </section>
+    <section class="mainMenu">
+      <div class="listSectors">
+        <h2>Setores</h2>
+        <p class="sectorList">Lista de setores das empresas</p>
+        <select class="selectSectors" name="setores"></select>
+      </div>
+      <div class="companiesMenu">
+        <h2>Empresas</h2>
+        <button class="registerCompanie">Cadastrar empresa</button>
+        <p>Lista de empresas</p>
+        <select class="companiesList" name="" id=""></select>
+        <button class="searchCompanie">Pesquisar empresa</button>
+      </div>
+      <div class="resultCompanie">
+        <h2>Departamentos:</h2>
+        <div class="companieDepartments">
+          <ul class="departmentList"></ul>
+        </div>
+      </div>
+      <div class="openMenu hidden">
+        <ul>
+          <li class="departmentButtonMobal">Departamentos</li>
+          <li class="employersButtonMobal">Funcionários</li>
+          <li class="burgerLogout">Logout</li>
+        </ul>
+      </div>
+    </section>
+    <div class="modalCadastrar hidden">
+      <div class="modalBackground"></div>
+      <div class="modalContent">
+        <img class="modalCloseBtn" src="./src/assets/close.png" />
+        <h4>Cadastrar empresa</h4>
+        <input
+          class="companieName"
+          type="text"
+          name=""
+          id=""
+          placeholder="Nome da empresa"
+        />
+        <input
+          class="companieTime"
+          type="text"
+          name=""
+          id=""
+          placeholder="Horário de abertura"
+        />
+        <input
+          class="companieDescription"
+          type="text"
+          name=""
+          id=""
+          placeholder="Descrição"
+        />
+        <p>Setor da empresa</p>
+        <select class="selectCompanies"></select>
+        <button class="registerButton">Registrar</button>
+      </div>
+    </div>
+    <script type="module" src="./src/scripts/requests.js"></script>
+    <script type="module" src="./src/scripts/axios.js"></script>
+    <script type="module" src="./src/scripts/toast.js"></script>
+    <script type="module" src="./src/scripts/admin.js"></script>
+    <script type="module" src="./src/scripts/logout.js"></script>
+    <script type="module" src="./src/scripts/redirects.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
 </html>

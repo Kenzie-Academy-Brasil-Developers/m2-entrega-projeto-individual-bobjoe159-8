@@ -1,20 +1,14 @@
-body {
-  background-color: var(--background-color);
-  font-size: 1.6rem;
-  font-family: 'Oswald', sans-serif;
-}
-
 .loginHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 .loginTitle {
   color: var(--basic-white);
   font-size: 4rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .loginLogo {
@@ -27,6 +21,7 @@ body {
   height: 10rem;
   color: var(--basic-white);
   text-align: center;
+  margin-top: 2rem;
 }
 
 .mainDescription {
@@ -48,7 +43,6 @@ body {
   z-index: -1;
   bottom: 0;
   width: 100%;
-  background-color: var(--principal-orange);
   height: 25rem;
 }
 
@@ -78,7 +72,7 @@ button {
 
 .loginRegisterQuestion {
   font-size: 1.8rem;
-  color: var(--basic-black);
+  color: var(--basic-white);
 }
 
 /* MODAL */
@@ -191,6 +185,10 @@ input:focus {
   color: var(--principal-orange);
 }
 
+.loginTextFooter {
+  margin-top: 4rem;
+}
+
 .modalRegisterLabel {
   padding-bottom: 2rem;
 }
@@ -200,16 +198,87 @@ input:focus {
   margin-left: 75%;
 }
 
-.businessContent {
+.companiesList {
+  height: 15rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.partnerCompanies {
+  color: var(--basic-white);
+}
+
+.cardContents {
+  display: flex;
+  gap: 1rem;
+  background-color: var(--gradient-background);
+  height: 15rem;
+}
+
+.companieCard {
+  background-color: var(--button-blue);
+  min-width: 15rem;
+}
+
+.desktopCompanies {
   display: none;
 }
 
-
 @media (min-width: 1024px) {
+
+  .mainMenu {
+    margin-left: 15rem;
+  }
+  .desktopCompanies {
+    position: absolute;
+    display: block;
+    background-color: var(--light-grey);
+    width: 50%;
+    margin-left: 4rem;
+    height: 60rem;
+    top: 8rem;
+    border-radius: 12px;
+  }
+
+  .companiesTitle {
+    text-align: center;
+    color: var(--basic-white);
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .cardContentDesktop {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    color: var(--basic-white);
+    margin-left: 4rem;
+  }
+
+  .companieCardDesktop {
+    padding-top: 3rem;
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--background-color);
+    border-radius: 12px;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .desktopCompanies {
+    padding-top: 7rem;
+    padding-left: 2rem;
+  }
+
   .loginBackground {
     width: 50%;
     height: 100vw;
-    background: var(--gradient-background)
+  }
+
+  .mainContent,
+  .partnerCompanies {
+    display: none;
   }
   
   .mainDescription {
@@ -271,5 +340,20 @@ input:focus {
   .modalRegisterContent {
     width: 50rem;
     height: 35rem;
+  }
+
+  .companiesTypes {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+  
+  .companiesTypes li {
+    padding: 1rem;
+    background-color: var(--button-blue);
+    border-radius: 12px;
+    color: var(--basic-white);
+    cursor: pointer
   }
 }

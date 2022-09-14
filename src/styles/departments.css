@@ -1,0 +1,155 @@
+body {
+  background-color: var(--background-color);
+}
+
+.headerMenu {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  align-items: center;
+  color: var(--basic-white);
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  background-color: var(--button-blue);
+  padding-block: 1rem;
+  height: 10%;
+}
+
+.headerLogo {
+  width: 5rem;
+}
+
+.headerExit {
+  display: none;
+}
+
+.burguerMenu,
+.cross-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.openMenu {
+  text-align: center;
+  background-color: var(--light-grey);
+  color: var(--basic-white);
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  padding-top: 30vh;
+  font-size: 3rem;
+  top: 0;
+}
+
+.openMenu ul li {
+  border-bottom: 1px solid;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.createDepartment,
+.editDepartment,
+.deleteDepartment {
+  width: 20rem;
+  height: 25rem;
+  background-color: var(--basic-white);
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.companieChosen {
+  display: block;
+  margin: 0 auto;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.submitEdit,
+.companieSubmit,
+.submitDelete {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: var(--principal-orange);
+  border: none;
+  color: var(--basic-white);
+  cursor: pointer
+}
+
+@media (min-width: 768px) {
+  .headerMenu {
+    padding-inline: 25rem;
+  }
+
+  .menuDesktop {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 12rem;
+  }
+  
+  .menuList {
+    display: flex;
+    justify-content: center;
+    color: var(--basic-white);
+    gap: 5rem;
+    padding: 1rem;
+  }
+
+  .headerExit {
+    display: block;
+    cursor: pointer
+  }
+
+  .burguerMenu {
+    display: none;
+  }
+
+  .menuList li {
+    background-color: var(--principal-orange);
+    padding: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .createDepartment,
+  .editDepartment,
+  .deleteDepartment {
+  width: 40rem;
+  height: 40rem;
+  background-color: var(--basic-white);
+  text-align: center;
+  border-radius: 12px;
+  margin-top: 1rem;
+  padding-top: 5rem;
+}
+  
+
+}

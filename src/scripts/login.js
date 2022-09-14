@@ -1,6 +1,13 @@
 import { Requests } from './requests.js'
 
 export class Login {
+  static renderLogin() {
+    const token = localStorage.getItem('@myBusiness:token')
+
+    if (token) {
+      window.location.replace('../../index.html')
+    }
+  }
   static userLogin() {
     const modalLoginEmail = document.querySelector('.modalLoginEmail')
     const modalLoginPassword = document.querySelector('.modalLoginPassword')
@@ -39,3 +46,5 @@ export class Login {
     })
   }
 }
+
+Login.renderLogin()

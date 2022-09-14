@@ -6,9 +6,12 @@ const modalRegister = document.querySelector('.modalRegister')
 class Modal {
   static showLoginModal() {
     const loginEmail = document.querySelector('.loginEmail')
+    const modalLoginContent = document.querySelector('.modalLoginContent')
 
     loginEmail.addEventListener('click', () => {
       modalLogin.classList.toggle('hidden')
+      modalLoginContent.classList.add('animate__animated', 'animate__fadeIn')
+      modalLoginContent.style.setProperty('--animate-duration', '0.5s')
     })
     Login.userLogin()
     Modal.closeLoginModal()
@@ -23,9 +26,11 @@ class Modal {
 
   static showRegisterModal() {
     const loginRegister = document.querySelector('.loginRegister')
-
+    const modalRegisterContent = document.querySelector('.modalRegisterContent')
     loginRegister.addEventListener('click', () => {
       modalRegister.classList.toggle('hidden')
+      modalRegisterContent.classList.add('animate__animated', 'animate__fadeIn')
+      modalRegisterContent.style.setProperty('--animate-duration', '0.5s')
     })
     Login.userRegister()
     Modal.closeRegisterModal()

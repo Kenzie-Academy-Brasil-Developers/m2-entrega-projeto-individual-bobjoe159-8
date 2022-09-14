@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/departments.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <title>Departamentos</title>
+  </head>
+
+  <body>
+    <header class="headerMenu">
+      <img class="headerLogo" src="../assets/logo.png" alt="" />
+      <h2>Departamentos</h2>
+      <img src="../assets/menu-icon.svg" alt="" class="burguerMenu" />
+      <span class="headerExit">Logout</span>
+    </header>
+    <section class="menuDesktop">
+      <ul class="menuList">
+        <li class="companiesButton">Empresas</li>
+        <li class="employersButton">Funcionários</li>
+      </ul>
+    </section>
+    <main class="mainContent">
+      <section class="createDepartment">
+        <h2>Criar departamento</h2>
+        <p>Nome do departamento:</p>
+        <input class="departmentName" type="text" name="" id="" />
+        <p>Descrição do departamento:</p>
+        <input class="departmentDescription" type="text" name="" id="" />
+        <p>
+          Selecione a empresa:
+          <select class="companieChosen" name="" id=""></select>
+        </p>
+        <button class="companieSubmit">Enviar</button>
+      </section>
+
+      <section class="editDepartment">
+        <h2>Editar</h2>
+        <p>Descrição do departamento:</p>
+        <input class="editDescription" type="text" name="" id="" />
+        <p>Selecione o departamento:</p>
+        <select class="editDepartmentsOption" name="" id=""></select>
+        <button class="submitEdit">Editar</button>
+      </section>
+
+      <section class="deleteDepartment">
+        <h2>Deletar</h2>
+        <p>Departamento:</p>
+        <p>Selecione o departamento:</p>
+        <select class="deleteDepartmentOption" name="" id=""></select>
+        <button class="submitDelete">Deletar</button>
+      </section>
+    </main>
+    <div class="openMenu hidden">
+      <ul>
+        <li class="companiesButtonMobal">Empresas</li>
+        <li class="employersButtonMobal">Funcionários</li>
+        <li class="burgerLogout">Logout</li>
+      </ul>
+    </div>
+    <script type="module" src="../scripts/departments.js"></script>
+    <script type="module" src="../scripts/requests.js"></script>
+    <script type="module" src="../scripts/axios.js"></script>
+    <script type="module" src="../scripts/toast.js"></script>
+    <script type="module" src="../scripts/logout.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>

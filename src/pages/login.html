@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles -->
     <link rel="stylesheet" href="../styles/reset.css" />
-    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
     <link rel="stylesheet" href="../styles/variables.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Toastify -->
     <link
       rel="stylesheet"
@@ -19,21 +23,16 @@
   </head>
   <body>
     <div class="mainMenu">
-      <section class="businessContent">
-        <img src="../assets/business.png" alt="" />
-        <!-- <h3 class="businessDescription">
-          Aqui a sua ideia se transforma em realidade.
-        </h3> -->
-      </section>
       <section class="principalContent">
         <header class="loginHeader">
           <img class="loginLogo" src="../assets/logo.png" alt="" />
           <p class="loginTitle">My Business</p>
+          <p class="partnerCompanies">Empresas parceiras:</p>
         </header>
         <main class="mainContent">
-          <h2 class="mainDescription">
-            Gerencie sua empresa de uma forma muito mais simples
-          </h2>
+          <div class="companiesList">
+            <ul class="cardContents"></ul>
+          </div>
         </main>
         <footer class="loginFooter">
           <p class="loginTextFooter">Faça seu login utilizando seu email:</p>
@@ -41,6 +40,21 @@
           <p class="loginRegisterQuestion">Não possui cadastro?</p>
           <button class="loginRegister">Cadastre-se</button>
         </footer>
+      </section>
+      <section class="desktopCompanies">
+        <p class="companiesTitle">Empresas parceiras:</p>
+        <ul class="companiesTypes">
+          <li class="setorGeral">Geral</li>
+          <li class="setorAlimenticio">Alimenticio</li>
+          <li class="setorVarejo">Varejo</li>
+          <li class="setorTextil">Textil</li>
+          <li class="setorManufatura">Manufatura</li>
+          <li class="setorAeroespacial">Aeroespacial</li>
+          <li class="setorAutomotivo">Automotiva</li>
+          <li class="setorAtacado">Atacado</li>
+          <li class="setorTi">TI</li>
+        </ul>
+        <ul class="cardContentDesktop"></ul>
       </section>
     </div>
     <div class="modalRegister hidden">
@@ -110,6 +124,7 @@
     <script type="module" src="../scripts/axios.js"></script>
     <script type="module" src="../scripts/requests.js"></script>
     <script type="module" src="../scripts/modal.js"></script>
+    <script type="module" src="../scripts/index.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script
       type="text/javascript"
